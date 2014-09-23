@@ -32,7 +32,7 @@ You don't need to instantiate an object, you can just call the functions directl
 
 Getting JSON Data
 =================
-    ConvertTalismaXML.ToJSON(XMLPath)
+    ConvertTalismaXML.ToJSON(XMLPath);
 
 Where XMLPath is the path to your XML File, such as c:\exports\talismaexport.xml
 
