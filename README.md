@@ -4,6 +4,7 @@ Talisma-Export-Conversion-JSON-DotNet
 This is a class that can be used to convert Talisma XML exports to JSON or to a List of Dictionaries in .NET
 
 XML Output Format
+=================
 The Talisma XML exported file format must appear like the following.  NOTE: It must have a header row.
 
     <?xml version="1.0" encoding="UTF-8" ?>
@@ -27,13 +28,15 @@ The Talisma XML exported file format must appear like the following.  NOTE: It m
 How To Use
 ==========
 
-You don't need to instantiate a class, you can just call the functions directly:
+You don't need to instantiate an object, you can just call the functions directly.  See below.
 
 Getting JSON Data
+=================
 ConvertTalismaXML.ToJSON(XMLPath)
 Where XMLPath is the path to your XML File, such as c:\exports\talismaexport.xml
 
 Getting a List of Dictionaries
+==============================
 List<Dictionary<string, string>> userlist = ConvertTalismaXML.ToDictionary(XMLPath);
 Where XMLPath is the path to your XML file.
 The dictionary key's will be the header names from the XML file.
