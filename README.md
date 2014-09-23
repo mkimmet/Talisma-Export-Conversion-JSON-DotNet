@@ -32,13 +32,13 @@ You don't need to instantiate an object, you can just call the functions directl
 
 Getting JSON Data
 =================
-ConvertTalismaXML.ToJSON(XMLPath)
+    ConvertTalismaXML.ToJSON(XMLPath)
 
 Where XMLPath is the path to your XML File, such as c:\exports\talismaexport.xml
 
 Getting a List of Dictionaries
 ==============================
-List<Dictionary<string, string>> userlist = ConvertTalismaXML.ToDictionary(XMLPath);
+    List<Dictionary<string, string>> userlist = ConvertTalismaXML.ToDictionary(XMLPath);
 
 Where XMLPath is the path to your XML file.
 
